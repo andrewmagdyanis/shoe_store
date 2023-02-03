@@ -1,0 +1,74 @@
+name: shoe_store
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  bloc: ^8.1.0
+  flutter_bloc: ^8.1.1
+
+  shared_preferences: ^2.0.13
+  sqflite: ^2.0.2
+  connectivity: ^3.0.4
+  share: ^2.0.1
+  url_launcher: ^6.0.4
+
+  cached_network_image: ^3.2.0
+  form_field_validator: ^1.1.0
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+  flutter_launcher_icons: ^0.11.0
+  flutter_native_splash:
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/sneaker_splash.png
+  color_dark: "#ffce06"
+  image_dark: assets/images/sneaker_splash.png
+  android_gravity: center
+  ios_content_mode: center
+  web_image_mode: center
+  android: true
+  ios: true
+  web: true
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/sneaker_logo.png"
+  adaptive_icon_background: "#ffce06"
+  adaptive_icon_foreground: "assets/icons/sneaker_logo.png"
+
+# The following section is specific to Flutter.
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: MyFlutterApp
+      fonts:
+        - asset: assets/fonts/MyFlutterApp.ttf
+
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Bold.ttf
+        - asset: assets/fonts/Raleway-Regular.ttf
+
+flutter_intl:
+  enabled: true
